@@ -4,7 +4,7 @@ import config from './config';
 const fetchJson = async (url, opts = {}) =>
   fetch(url, opts).then((res) => res.json());
 
-async function run(this) {
+const run = async () => {
   const [cmd, ...args] = process.argv.slice(2);
   const { apiUrl } = config;
 
